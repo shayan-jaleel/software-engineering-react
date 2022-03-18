@@ -22,7 +22,7 @@ test('user list renders static user array', () => {
 });
 
 
-// NOTE: tested in another file
+// NOTE: tested in another file (user-list-2-test.js)
 
 // test('user list renders async', async () => {
 //   const users = await findAllUsers();
