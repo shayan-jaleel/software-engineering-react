@@ -1,9 +1,13 @@
 import {UserList} from "../components/profile/user-list";
+<<<<<<< HEAD
 // ../components/profile/userList
+=======
+>>>>>>> eb20c78589f4821def884d33e3ae9a0750675a83
 import {screen, render} from "@testing-library/react";
 import {HashRouter} from "react-router-dom";
 import {findAllUsers} from "../services/users-service";
 import axios from "axios";
+import {createUser} from "./services";
 
 jest.mock('axios');
 
@@ -37,6 +41,7 @@ test('user list renders static user array', () => {
 test('user list renders mocked', async () => {
   axios.get.mockImplementation(() =>
     Promise.resolve({ data: {users: MOCKED_USERS} }));
+
   const response = await findAllUsers();
   const users = response.users;
 
