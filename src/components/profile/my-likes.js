@@ -2,6 +2,7 @@ import Tuits from "../tuits";
 import * as service from "../../services/likes-service";
 import {useEffect, useState} from "react";
 
+// The component that renders the MyLikes screen
 const MyLikes = () => {
     const [likedTuits, setLikedTuis] = useState([]);
     const findTuitsILike = () =>
